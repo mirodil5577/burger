@@ -1,0 +1,360 @@
+@import 'fonts.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --white: #FFFFFF;
+    --green: #69CF17;
+    --black: #0C0C0C;
+}
+
+body {
+    background: var(--black);
+}
+
+.container {
+    max-width: 1110px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+/* HEADER START */
+
+.header {
+    background: url('../images/header-bg.png') center center / cover;
+    height: 820px;
+}
+
+.header__poster {
+    background: #0C0C0C;
+}
+
+.header__poster-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 0;
+}
+
+.header__poster-icon {
+    font-size: 20px;
+    color: var(--white);
+}
+
+.header__poster-span {
+    color: var(--white);
+    font-size: 16px;
+    font-family: 'RR';
+    line-height: 19px;
+}
+
+.header__poster-list {
+    display: flex;
+}
+
+.header__poster-link {
+    padding-left: 20px;
+    color: var(--white);
+    font-size: 16px;
+    font-family: 'RR';
+    line-height: 19px;
+}
+
+.header__nav {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(125, 115, 115, 0.5);
+    backdrop-filter: blur(15px);
+}
+
+.header__nav-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    align-items: center;
+    /* background: url('../images/header-bg.png') center center/ cover;
+    height: 820px; */
+}
+
+.header__nav-list {
+    display: flex;
+}
+
+.header__nav-link {
+    margin-left: 28px;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    font-family: 'RailR';
+    transition: .5s;
+    padding: 22px 14px;
+}
+
+.header__nav-link:hover {
+    background: rgba(105, 207, 23, 0.75);
+   
+}
+
+.header__content {
+   display: flex;
+   
+}
+
+.header__content-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 820px;
+}
+
+.header__content-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.header__content-title {
+    font-size: 72px;
+    line-height: 85px;
+    font-family: 'RailBl';
+    color: #69CF17;
+}
+
+.header__content-name {
+    font-size: 36px;
+    line-height: 17px;
+    color: #69CF17;
+    font-family: 'RailR';
+    margin: 18px 0;
+}
+
+.header__content-description {
+    font-size: 18px;
+    line-height: 24px;
+    font-family: 'RailR';
+    color: #FFFFFF;
+    padding-bottom: 30px;
+}
+
+.header__content-price {
+    background: rgba(105, 207, 23, 0.5);
+    backdrop-filter: blur(18px);
+    padding: 33px 76px;
+    font-size: 50px;
+    line-height: 25px;
+    text-align: right;
+    font-family: 'RailT';
+    color: #FFFFFF;
+}
+
+.header__content-view {
+    display: block;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: right;
+    font-family: 'RailR';
+    color: #FFFFFF;
+    background: linear-gradient(90deg, #69CF17 0%, #417D11 100%);
+    border-radius: 6px;
+    padding: 15px 70px;
+}
+
+
+/* HEADER END */
+
+
+/* MAIN START */
+
+.main {
+    background: #393636;
+}
+
+.main__top-list {
+    display: flex;
+    padding: 20px;
+    margin-left: 21px;
+    gap: 33px;
+}
+
+.main__top-link {
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    font-family: 'RailR';
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 19px;
+}
+
+.main__top-link::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #FFFFFF;
+    transition: 0.5s;
+    bottom: 0;
+}
+
+.main__top-link:hover::after {
+    width: 100%;
+
+}
+
+.main__top {
+    background: #292929;
+    box-shadow: 0px 1px 8px rgba(17, 17, 17, 0.3);
+    /* margin-bottom: 15px; */
+}
+
+.main__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px;
+    max-width: 1800px;
+    width: 100%;
+    padding-bottom: 65px;
+    padding-top: 20px;
+}
+
+.main__card {
+    max-width: 370px;
+    width: 100%;
+    border-radius: 4px;
+    background: #0C0C0C;
+    border: 1px solid #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    overflow: hidden;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.main__card-img {
+    padding: 15px;
+}
+
+.main__card-title {
+    font-size: 19px;
+    line-height: 15px;
+    color: #FFFFFF;
+    font-family: 'RailB';
+    padding-left: 15px;
+}
+
+.main__card-descr {
+    font-size: 19px;
+    line-height: 25px;
+    font-family: 'RailR';
+    color: #FFFFFF;
+    margin: 15px 0;
+    padding-left: 15px;
+}
+
+.main__card-hover {
+    color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.main__card_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(105, 207, 23, 0.9);
+    opacity: 0;
+    transition: 0.5s;
+
+}
+
+.main__card_link:hover {
+    opacity: 1;
+}
+
+.main__card_link i {
+    font-size: 40px;
+    color: #FFFFFF;
+}
+
+.main__branches {
+    background: #FFFFFF;
+    text-align: center;
+}
+
+.main__branches-title {
+    padding: 20px 0;
+    font-size: 50px;
+    line-height: 40px;
+    font-family: 'RailB';
+    color: #69CF17;
+}
+
+.main__map {
+    width: 100%;
+}
+
+
+
+
+/* MAIN END */
+
+
+/* FOOTER START */
+
+.footer {
+    background: linear-gradient(180deg, #000000 0%, rgba(105, 207, 23, 0.5) 100%);
+    height: 325px;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 80px;
+    padding-top: 30px;
+}
+
+.footer__content-tel {
+    font-size: 20px;
+    line-height: 23px;
+    text-align: right;
+    font-family: 'RB';
+    color: #FFFFFF;
+}
+
+.footer__list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.footer__link {
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    font-family: 'RR';
+    color: #FFFFFF;
+}
+
+
+
+/* FOOTER END */
